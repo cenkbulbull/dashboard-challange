@@ -16,6 +16,7 @@ export function useCommonProps(props) {
     radius: String,
     width: String,
     height: String,
+    options: Array,
   };
 
   const style = computed(() => ({

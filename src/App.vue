@@ -3,7 +3,9 @@
 </template>
 
 <style lang="scss">
-body{
+*{
   font-family: $font-family-inter;
+  margin: 0;
+  overflow: hidden
 }
 </style>

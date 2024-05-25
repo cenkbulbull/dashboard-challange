@@ -25,5 +25,14 @@ const { style } = useCommonProps(props);
   &__icon {
     margin-right: 8px;
   }
+
+  &--active{
+    background-color: $eerie-black-5;
+  }
+
+  &:hover{
+    background-color: $eerie-black-5;
+  }
+
 }
 </style>

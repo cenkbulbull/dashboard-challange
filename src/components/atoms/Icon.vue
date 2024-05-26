@@ -4,8 +4,8 @@
 
 <script setup>
 import { defineProps } from "vue";
-import { useCommonProps } from "@/composables/useCommonProps";
+import { useIconProps } from "@/composables/useIconProps";
 
-const props = defineProps(useCommonProps().commonProps);
-const { style } = useCommonProps(props);
+const props = defineProps(useIconProps().iconProps);
+const { style } = useIconProps(props);
 </script>

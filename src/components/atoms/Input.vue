@@ -9,10 +9,10 @@
 
 <script setup>
 import { defineProps } from "vue";
-import { useCommonProps } from "@/composables/useCommonProps";
+import { useInputProps } from "@/composables/useInputProps";
 
-const props = defineProps(useCommonProps().commonProps);
-const { style } = useCommonProps(props);
+const props = defineProps(useInputProps().inputProps);
+const { style } = useInputProps(props);
 </script>
 
 <style lang="scss" scoped>

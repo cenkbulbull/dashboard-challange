@@ -7,10 +7,10 @@
 <script setup>
 import Icon from "./Icon.vue";
 import { defineProps } from "vue";
-import { useCommonProps } from "@/composables/useCommonProps";
+import { useAvatarProps } from "@/composables/useAvatarProps";
 
-const props = defineProps(useCommonProps().commonProps);
-const { style } = useCommonProps(props);
+const props = defineProps(useAvatarProps().avatarProps);
+const { style } = useAvatarProps(props);
 </script>
 
 <style lang="scss" scoped>

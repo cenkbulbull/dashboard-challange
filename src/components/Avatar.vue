@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-import Icon from "@/components/atoms/Icon.vue";
 import { defineProps } from "vue";
 import { useAvatarProps } from "@/composables/useAvatarProps";
 

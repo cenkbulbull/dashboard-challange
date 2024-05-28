@@ -11,8 +11,6 @@
 </template>
 
 <script setup>
-import Icon from "@/components/atoms/Icon.vue";
-import Text from "@/components/atoms/Text.vue";
 import { defineProps } from "vue";
 import { useButtonProps } from "@/composables/useButtonProps";
 

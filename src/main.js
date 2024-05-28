@@ -57,6 +57,16 @@ app.component('LinkItem',LinkItem)
 app.component('Widget',Widget)
 app.component('ChartWidget',ChartWidget)
 
+//layouts
+import Dashboard from "@/layouts/Dashboard.vue"
+import Header from "@/layouts/Header.vue"
+import Rightbar from "@/layouts/Rightbar.vue"
+import Sidebar from "@/layouts/Sidebar.vue"
+
+app.component('Dashboard',Dashboard)
+app.component('Header',Header)
+app.component('Rightbar',Rightbar)
+app.component('Sidebar',Sidebar)
 
 // Chart
 app.component('Bar', Bar);

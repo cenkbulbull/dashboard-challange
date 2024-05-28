@@ -3,7 +3,7 @@
     <div class="header__left-side">
       
       <div class="header__left-side-button-group">
-        <Button icon="layout-left-line" bg="transparent" />
+        <Button icon="layout-left-line" bg="transparent" @click="toggleSidebar"/>
         <Button icon="star-line" bg="transparent" />
       </div>
       
@@ -23,9 +23,23 @@
         <Button icon="sun-line" bg="transparent"/>
         <Button icon="arrow-go-back-line" bg="transparent"/>
         <Button icon="notification-line" bg="transparent"/>
-        <Button icon="layout-right-line" bg="transparent"/>
+        <Button icon="layout-right-line" bg="transparent" @click="toggleRightbar"/>
       </div>
 
     </div>
   </div>
 </template>
+
+<script setup>
+import { useStore } from 'vuex';
+const store = useStore();
+
+const toggleSidebar = () => {
+  store.commit('toggleSidebar');
+};
+
+const toggleRightbar = () => {
+  store.commit('toggleRightbar');
+};
+
+</script>

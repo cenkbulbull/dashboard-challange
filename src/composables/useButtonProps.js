@@ -1,4 +1,4 @@
-import { computed } from "vue";
+import { computed, defineProps } from "vue";
 
 export function useButtonProps(props) {
   const buttonProps = {
@@ -26,6 +26,6 @@ export function useButtonProps(props) {
     width: props.width,
     height: props.height,
   }));
-
-  return { buttonProps, style };
+    
+  return { buttonProps, style, defineProps };
 }

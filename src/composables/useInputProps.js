@@ -1,4 +1,4 @@
-import { computed } from "vue";
+import { computed, defineProps } from "vue";
 
 export function useInputProps(props) {
   const inputProps = {
@@ -26,5 +26,5 @@ export function useInputProps(props) {
     "--placeholder-color": props.color,
   }));
 
-  return { inputProps, style };
+  return { inputProps, style, defineProps };
 }

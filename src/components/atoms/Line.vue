@@ -3,8 +3,7 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
-import { useLineProps } from "@/composables/useLineProps";
+import { useLineProps,defineProps } from "@/composables/useLineProps";
 
 const props = defineProps(useLineProps().lineProps);
 const { style } = useLineProps(props);

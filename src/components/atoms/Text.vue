@@ -5,8 +5,7 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
-import { useTextProps } from "@/composables/useTextProps";
+import { useTextProps,defineProps } from "@/composables/useTextProps";
 
 const props = defineProps(useTextProps().textProps);
 const { style } = useTextProps(props);

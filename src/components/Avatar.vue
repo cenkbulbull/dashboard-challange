@@ -5,8 +5,7 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
-import { useAvatarProps } from "@/composables/useAvatarProps";
+import { useAvatarProps,defineProps } from "@/composables/useAvatarProps";
 
 const props = defineProps(useAvatarProps().avatarProps);
 const { style } = useAvatarProps(props);

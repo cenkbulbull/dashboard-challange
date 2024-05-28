@@ -3,8 +3,8 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
-import { useIconProps } from "@/composables/useIconProps";
+
+import { useIconProps, defineProps } from "@/composables/useIconProps";
 
 const props = defineProps(useIconProps().iconProps);
 const { style } = useIconProps(props);

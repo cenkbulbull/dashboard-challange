@@ -1,4 +1,4 @@
-import { computed } from "vue";
+import { computed, defineProps } from "vue";
 
 export function useAvatarProps(props) {
   const avatarProps = {
@@ -34,5 +34,5 @@ export function useAvatarProps(props) {
     height: props.height,
   }));
 
-  return { avatarProps, style };
+  return { avatarProps, style, defineProps };
 }

@@ -1,4 +1,5 @@
-import { computed } from "vue";
+import { computed, defineProps } from "vue";
+
 
 export function useIconProps(props) {
   const iconProps = {
@@ -12,5 +13,5 @@ export function useIconProps(props) {
     fontSize: props.size,
   }));
 
-  return { iconProps, style };
+  return { iconProps, style,defineProps };
 }

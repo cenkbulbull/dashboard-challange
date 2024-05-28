@@ -1,4 +1,4 @@
-import { computed } from "vue";
+import { computed, defineProps } from "vue";
 
 export function useLineProps(props) {
   const lineProps = {
@@ -31,5 +31,5 @@ export function useLineProps(props) {
     height: props.direction === "horizontal" ? props.thickness : props.length,
   }));
 
-  return { lineProps, style };
+  return { lineProps, style, defineProps };
 }

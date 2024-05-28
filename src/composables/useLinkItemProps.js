@@ -1,4 +1,4 @@
-import { computed } from "vue";
+import { computed, defineProps } from "vue";
 
 export function useLinkItemProps(props) {
   const linkItemProps = {
@@ -26,5 +26,5 @@ export function useLinkItemProps(props) {
     height: props.height,
   }));
 
-  return { linkItemProps, style };
+  return { linkItemProps, style, defineProps };
 }

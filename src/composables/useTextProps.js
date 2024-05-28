@@ -1,4 +1,4 @@
-import { computed } from "vue";
+import { computed,defineProps } from "vue";
 
 export function useTextProps(props) {
   const textProps = {
@@ -16,5 +16,5 @@ export function useTextProps(props) {
     lineHeight:props.lineHeight
   }));
 
-  return { textProps, style };
+  return { textProps, style,defineProps };
 }

@@ -11,8 +11,7 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
-import { useButtonProps } from "@/composables/useButtonProps";
+import { useButtonProps,defineProps } from "@/composables/useButtonProps";
 
 const props = defineProps(useButtonProps().buttonProps);
 const { style } = useButtonProps(props);

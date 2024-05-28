@@ -8,8 +8,7 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
-import { useInputProps } from "@/composables/useInputProps";
+import { useInputProps, defineProps } from "@/composables/useInputProps";
 
 const props = defineProps(useInputProps().inputProps);
 const { style } = useInputProps(props);

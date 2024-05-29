@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { useTextProps,defineProps } from "@/composables/useTextProps";
+import { useTextProps,defineProps } from "@/composables/ui/useTextProps";
 
 const props = defineProps(useTextProps().textProps);
 const { style } = useTextProps(props);

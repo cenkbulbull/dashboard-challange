@@ -5,16 +5,8 @@
 </template>
 
 <script setup>
-import { useAvatarProps,defineProps } from "@/composables/useAvatarProps";
+import { useAvatarProps,defineProps } from "@/composables/ui/useAvatarProps";
 
 const props = defineProps(useAvatarProps().avatarProps);
 const { style } = useAvatarProps(props);
 </script>
-
-<style lang="scss" scoped>
-.avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-</style>

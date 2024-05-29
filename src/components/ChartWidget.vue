@@ -16,7 +16,7 @@
 
 <script setup>
 import { computed } from "vue";
-import { useChartWidgetProps, defineProps } from "@/composables/useChartWidgetProps";
+import { useChartWidgetProps, defineProps } from "@/composables/ui/useChartWidgetProps";
 import { Bar, Line, Doughnut } from 'vue-chartjs';
 
 const props = defineProps(useChartWidgetProps().chartWidgetProps);
@@ -35,20 +35,3 @@ const chartComponent = computed(() => {
   }
 });
 </script>
-
-<style lang="scss" scoped>
-.chart-widget {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 16px;
-  padding: 24px;
-  border-radius: 16px;
-  background-color: $catskill-white;
-  color: $eerie-black;
-
-  &__title {
-    @include text-style($font-size-lg, $font-weight-medium, $line-height-lg);
-  }
-}
-</style>

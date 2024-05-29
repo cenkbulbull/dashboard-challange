@@ -4,7 +4,7 @@
 
 <script setup>
 
-import { useIconProps, defineProps } from "@/composables/useIconProps";
+import { useIconProps, defineProps } from "@/composables/ui/useIconProps";
 
 const props = defineProps(useIconProps().iconProps);
 const { style } = useIconProps(props);

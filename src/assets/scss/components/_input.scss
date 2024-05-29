@@ -1,0 +1,9 @@
+$placeholder-color: var(--placeholder-color);
+
+.input {
+  outline: none;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+}

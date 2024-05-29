@@ -8,3 +8,13 @@
 @use './layout/header';
 @use './layout/rightbar';
 @use './layout/dashboard';
+
+//components
+@use './components/input';
+@use './components/line';
+@use './components/avatar';
+@use './components/button';
+@use './components/chartwidget';
+@use './components/widget';
+@use './components/linkitem';
+@use './components/notificationitem';

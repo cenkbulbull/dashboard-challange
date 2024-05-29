@@ -6,23 +6,19 @@
       :size="props.iconSize"
       :color="props.iconColor"
     />
-    <Text :text="props.text" />
+    <Text
+      v-if="props.text"
+      :text="props.text"
+      :fontWeight="props.fontWeight"
+      :fontSize="props.fontSize"
+      :lineHeight="props.lineHeight"
+    />
   </button>
 </template>
 
 <script setup>
-import { useButtonProps,defineProps } from "@/composables/useButtonProps";
+import { useButtonProps, defineProps } from "@/composables/ui/useButtonProps";
 
 const props = defineProps(useButtonProps().buttonProps);
 const { style } = useButtonProps(props);
 </script>
-
-<style lang="scss" scoped>
-.btn {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  border: 0;
-  cursor: pointer;
-}
-</style>

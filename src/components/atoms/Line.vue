@@ -3,20 +3,8 @@
 </template>
 
 <script setup>
-import { useLineProps,defineProps } from "@/composables/useLineProps";
+import { useLineProps,defineProps } from "@/composables/ui/useLineProps";
 
 const props = defineProps(useLineProps().lineProps);
 const { style } = useLineProps(props);
 </script>
-
-<style lang="scss" scoped>
-.line {
-  &.horizontal {
-    display: block;
-  }
-  
-  &.vertical {
-    display: block;
-  }
-}
-</style>

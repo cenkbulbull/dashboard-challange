@@ -8,6 +8,7 @@ export function useButtonProps(props) {
     color: String,
     iconColor: String,
     fontSize: String,
+    lineHeight: String,
     iconSize: String,
     padding: String,
     border: String,
@@ -19,7 +20,6 @@ export function useButtonProps(props) {
   const style = computed(() => ({
     backgroundColor: props.bg,
     color: props.color,
-    fontSize: props.fontSize,
     padding: props.padding,
     border: props.border,
     borderRadius: props.radius,

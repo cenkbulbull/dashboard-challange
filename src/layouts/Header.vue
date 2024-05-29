@@ -3,12 +3,12 @@
     <div class="header__left-side">
       
       <div class="header__left-side-button-group">
-        <Button icon="layout-left-line" bg="transparent" @click="toggleSidebar"/>
-        <Button icon="star-line" bg="transparent" />
+        <Button icon="layout-left-line" bg="transparent" padding="4px" @click="toggleSidebar"/>
+        <Button icon="star-line" bg="transparent" padding="4px" />
       </div>
       
       <div class="header__left-side-breadcrumb">
-        <Breadcrumb :options="['Dashboard','Default']" color="rgba(28, 28, 28, 0.4)" activeColor="#1C1C1C"/>
+        <Breadcrumb :options="['Dashboard','Default']" color="rgba(28, 28, 28, 0.4)" activeColor="#1C1C1C" radius="8px"/>
       </div>
 
     </div>
@@ -20,10 +20,10 @@
       </div>
 
       <div class="header__right-side-button-group">
-        <Button icon="sun-line" bg="transparent"/>
-        <Button icon="arrow-go-back-line" bg="transparent"/>
-        <Button icon="notification-line" bg="transparent"/>
-        <Button icon="layout-right-line" bg="transparent" @click="toggleRightbar"/>
+        <Button icon="sun-line" bg="transparent" padding="4px"/>
+        <Button icon="arrow-go-back-line" bg="transparent" padding="4px"/>
+        <Button icon="notification-line" bg="transparent" padding="4px"/>
+        <Button icon="layout-right-line" bg="transparent" padding="4px" @click="toggleRightbar" />
       </div>
 
     </div>

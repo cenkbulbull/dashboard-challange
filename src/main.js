@@ -38,7 +38,6 @@ import Text from "@/components/atoms/Text.vue";
 import Input from "@/components/atoms/Input.vue";
 import line from "@/components/atoms/Line.vue";
 import Button from "@/components/Button.vue";
-import Breadcrumb from "@/components/Breadcrumb.vue"
 import Search from "@/components/Search.vue"
 import NotificationItem from '@/components/NotificationItem.vue';
 import Avatar from "@/components/Avatar.vue";
@@ -51,7 +50,6 @@ app.component('Text',Text)
 app.component('Input',Input)
 app.component('line',line)
 app.component('Button',Button)
-app.component('Breadcrumb',Breadcrumb)
 app.component('Search',Search)
 app.component('NotificationItem',NotificationItem)
 app.component('Avatar',Avatar)

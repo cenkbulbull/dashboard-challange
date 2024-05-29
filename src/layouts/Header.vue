@@ -8,7 +8,7 @@
       </div>
       
       <div class="header__left-side-breadcrumb">
-        <Breadcrumb :options="['Dashboard','Default']" color="rgba(28, 28, 28, 0.4)" activeColor="#1C1C1C" radius="8px"/>
+        <!--<Breadcrumb :options="['Dashboard','Default']" color="rgba(28, 28, 28, 0.4)" activeColor="#1C1C1C" radius="8px"/>-->
       </div>
 
     </div>

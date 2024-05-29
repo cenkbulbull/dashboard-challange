@@ -8,17 +8,14 @@
 
       <!-- Middle content -->
       <div :class="middleContentClass">
+        <!-- Header -->
         <div class="row">
-          <!-- Header -->
-          <div class="col-12">
-            <Header />
-          </div>
+          <Header />
         </div>
 
-        <div class="row">
-          <div class="col-12">
-            <router-view></router-view>
-          </div>
+        <!-- Views-->
+        <div class="row dashboard__views">
+          <router-view></router-view>
         </div>
       </div>
 
@@ -31,23 +28,22 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
-import { computed } from 'vue';
+import { useStore } from "vuex";
+import { computed } from "vue";
 
 const store = useStore();
-store.dispatch('initializeState');
+store.dispatch("initializeState");
 
 const sidebarVisible = computed(() => store.getters.sidebarVisible);
 const rightbarVisible = computed(() => store.getters.rightbarVisible);
 
 const middleContentClass = computed(() => {
   if (!sidebarVisible.value && !rightbarVisible.value) {
-    return 'col-12';
+    return "col-12";
   } else if (!sidebarVisible.value || !rightbarVisible.value) {
-    return 'col-10';
+    return "col-10";
   } else {
-    return 'col-8';
+    return "col-8";
   }
 });
-
 </script>

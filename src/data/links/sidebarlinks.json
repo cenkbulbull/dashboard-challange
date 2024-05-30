@@ -1,0 +1,14 @@
+{
+  "pages": [
+    { "id":1, "text": "Overview", "to": "/" },
+    { "id":2, "text": "Projects", "to": "/project" },
+    { "id":3, "text": "Compaigns", "to": "/compaigns" },
+    { "id":4, "text": "Documents", "to": "/documents" },
+    { "id":5, "text": "Followers", "to": "/followers" }
+  ],
+  "dashboards": [
+    { "id":1, "text": "eCommerce", "to": "/", "icon":"briefcase-fill"},
+    { "id":2, "text": "Projects", "to": "/project", "icon":"folder-3-line" },
+    { "id":3, "text": "Online Courses", "to": "/compaigns", "icon":"book-3-line" }
+  ]
+}

@@ -36,7 +36,6 @@ app.use(store);
 import Icon from "@/components/atoms/Icon.vue";
 import Text from "@/components/atoms/Text.vue";
 import Input from "@/components/atoms/Input.vue";
-import line from "@/components/atoms/Line.vue";
 import Button from "@/components/Button.vue";
 import Search from "@/components/Search.vue"
 import NotificationItem from '@/components/NotificationItem.vue';
@@ -48,7 +47,6 @@ import ChartWidget from "@/components/ChartWidget"
 app.component('Icon',Icon)
 app.component('Text',Text)
 app.component('Input',Input)
-app.component('line',line)
 app.component('Button',Button)
 app.component('Search',Search)
 app.component('NotificationItem',NotificationItem)

@@ -11,8 +11,6 @@
   height: 100vh;
   @include text-style($font-size-lg, $font-weight-light, $line-height-lg);
   color: $eerie-black;
-  position: sticky;
-  top: 0;
   overflow-y: scroll;
 
   &__header{

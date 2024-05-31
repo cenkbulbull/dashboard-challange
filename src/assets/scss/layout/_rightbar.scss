@@ -9,8 +9,6 @@
   padding: 16px;
   border-left: 1px solid $eerie-black-10;
   height: 100vh;
-  position: sticky;
-  top: 0;
   overflow-y: scroll;
 
   &__notification{
@@ -23,30 +21,21 @@
       color:$eerie-black;
       padding: 8px 4px;
     }
+
+    &-item{
+      &--timeline{
+        &:not(:last-child)::after {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 18px;
+          background-color: $eerie-black-10;
+          position: absolute;
+          left: 19px;
+          bottom: -3px;
+          z-index: -1;
+        }
+      }
+    } 
   }
-
-  &__activities{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-
-    &-title{
-      @include text-style($font-size-lg, $font-weight-light, $line-height-lg);
-      color:$eerie-black;
-      padding: 8px 4px;
-    }
-  }
-
-  &__contacts{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-
-    &-title{
-      @include text-style($font-size-lg, $font-weight-light, $line-height-lg);
-      color:$eerie-black;
-      padding: 8px 4px;
-    }
-  }
-  
 }

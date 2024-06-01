@@ -3,8 +3,12 @@
     <div class="header__left-side">
       
       <div class="header__left-side-button-group">
-        <Button icon="layout-left-line" bg="transparent" padding="4px" @click="toggleSidebar"/>
-        <Button icon="star-line" bg="transparent" padding="4px" />
+        <Button padding="4px" @click="toggleSidebar">
+          <Icon name="layout-left-line"/>
+        </Button>
+        <Button padding="4px">
+          <Icon name="star-line"/>
+        </Button>
       </div>
       
       <div class="header__left-side-breadcrumb">
@@ -20,10 +24,18 @@
       </div>
 
       <div class="header__right-side-button-group">
-        <Button icon="sun-line" bg="transparent" padding="4px"/>
-        <Button icon="arrow-go-back-line" bg="transparent" padding="4px"/>
-        <Button icon="notification-line" bg="transparent" padding="4px"/>
-        <Button icon="layout-right-line" bg="transparent" padding="4px" @click="toggleRightbar" />
+        <Button padding="4px">
+          <Icon name="sun-line"/>
+        </Button>
+        <Button padding="4px">
+          <Icon name="arrow-go-back-line"/>
+        </Button>
+        <Button padding="4px">
+          <Icon name="notification-line"/>
+        </Button>
+        <Button padding="4px"  @click="toggleRightbar">
+          <Icon name="layout-right-line"/>
+        </Button>
       </div>
 
     </div>

@@ -36,8 +36,9 @@ app.use(store);
 import Icon from "@/components/atoms/Icon.vue";
 import Text from "@/components/atoms/Text.vue";
 import Input from "@/components/atoms/Input.vue";
-import Button from "@/components/Button.vue";
+import Button from "@/components/atoms/Button.vue";
 import Search from "@/components/Search.vue"
+import Breadcrumb from "@/components/Breadcrumb.vue"
 import NotificationItem from '@/components/NotificationItem.vue';
 import Avatar from "@/components/Avatar.vue";
 import LinkItem from "@/components/LinkItem.vue";
@@ -49,6 +50,7 @@ app.component('Text',Text)
 app.component('Input',Input)
 app.component('Button',Button)
 app.component('Search',Search)
+app.component('Breadcrumb',Breadcrumb)
 app.component('NotificationItem',NotificationItem)
 app.component('Avatar',Avatar)
 app.component('LinkItem',LinkItem)

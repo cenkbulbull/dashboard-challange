@@ -16,26 +16,19 @@
     flex-direction: column;
     gap: 4px;
 
+    &-item:not(:last-child) .notification__avatar--timeline::after {
+      content: "";
+        display: block;
+        width: 1px;
+        height: 18px;
+        border-radius: 80px;
+        background-color: $eerie-black-10;
+    }
+
     &-title{
       @include text-style($font-size-lg, $font-weight-light, $line-height-lg);
       color:$eerie-black;
       padding: 8px 4px;
     }
-
-    &-item{
-      &--timeline{
-        &:not(:last-child)::after {
-          content: "";
-          display: block;
-          width: 1px;
-          height: 18px;
-          background-color: $eerie-black-10;
-          position: absolute;
-          left: 19px;
-          bottom: -3px;
-          z-index: -1;
-        }
-      }
-    } 
   }
 }

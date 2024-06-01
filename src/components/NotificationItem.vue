@@ -1,7 +1,7 @@
 <template>
   <div class="notification" :style="style">
 
-    <div class="notification__avatar">
+    <div class="notification__avatar" :class="props.timeline ? 'notification__avatar--timeline' : ''">
       <Avatar
         :bg="props.avatarBg"
         :image="props.avatarImage"

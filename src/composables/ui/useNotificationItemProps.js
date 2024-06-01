@@ -18,6 +18,7 @@ export function useNotificationItemProps(props) {
     avatarWidth: String,
     avatarHeight: String,
     dateText: String,
+    timeline: Boolean
   };
 
   const style = computed(() => ({

@@ -8,7 +8,7 @@
     
     <div class="rightbar__notification">
       <span class="rightbar__notification-title"><Text text="Activities" fontSize="14px" fontWeight="400" lineHeight="20px" /></span>
-      <NotificationItem class="rightbar__notification-item rightbar__notification-item--timeline"  v-for="(item,index) in items.activities" :key="index" :text="item.text" :dateText="item.datetext" :avatarImage="item.image" avatarWidth="24px" avatarHeight="24px" avatarRadius="50px"/>
+      <NotificationItem class="rightbar__notification-item"  v-for="(item,index) in items.activities" :key="index" :text="item.text" :dateText="item.datetext" :avatarImage="item.image" avatarWidth="24px" avatarHeight="24px" avatarRadius="50px" timeline="true"/>
     </div>
 
     <div class="rightbar__notification">

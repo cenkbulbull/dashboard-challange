@@ -37,10 +37,10 @@ import Icon from "@/components/atoms/Icon.vue";
 import Text from "@/components/atoms/Text.vue";
 import Input from "@/components/atoms/Input.vue";
 import Button from "@/components/atoms/Button.vue";
+import Avatar from "@/components/atoms/Avatar.vue";
 import Search from "@/components/Search.vue"
 import Breadcrumb from "@/components/Breadcrumb.vue"
 import NotificationItem from '@/components/NotificationItem.vue';
-import Avatar from "@/components/Avatar.vue";
 import LinkItem from "@/components/LinkItem.vue";
 import Widget from "@/components/Widget"
 import ChartWidget from "@/components/ChartWidget"

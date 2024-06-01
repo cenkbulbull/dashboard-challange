@@ -3,6 +3,7 @@ import { computed, defineProps } from "vue";
 export function useNotificationItemProps(props) {
   const notificationItemProps = {
     text: String,
+    icon: String,
     bg: String,
     avatarBg: String,
     color: String,

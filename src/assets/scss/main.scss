@@ -2,6 +2,7 @@
 @use './base/variables';
 @use './base/typography';
 @use './base/mixins';
+@use './base/reset';
 
 //layouts
 @use './layout/sidebar';

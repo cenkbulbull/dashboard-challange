@@ -1,7 +1,7 @@
 <template>
   <div class="chart-widget" :style="style">
     <div class="chart-widget__title">
-      {{ props.title }}
+      <Text :text="props.title" fontSize="14px" fontWeight="600" />
     </div>
 
     <div class="chart-widget__content">

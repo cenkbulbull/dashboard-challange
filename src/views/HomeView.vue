@@ -27,11 +27,3 @@
 import data from '@/data/charts/data.json'
 import options from '@/data/charts/options.json'
 </script>
-
-<style lang="scss" scoped>
-.home {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-</style>

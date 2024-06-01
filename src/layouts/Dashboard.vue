@@ -7,7 +7,7 @@
       </div>
 
       <!-- Middle content -->
-      <div :class="middleContentClass">
+      <div class="p-0" :class="middleContentClass">
         <!-- Header -->
         <div class="row">
           <Header />
@@ -39,9 +39,9 @@ const rightbarVisible = computed(() => store.getters.rightbarVisible);
 
 const middleContentClass = computed(() => {
   if (!sidebarVisible.value && !rightbarVisible.value) {
-    return "col-12";
+    return "col-12 px-3";
   } else if (!sidebarVisible.value || !rightbarVisible.value) {
-    return "col-10";
+    return "col-10 px-3";
   } else {
     return "col-8";
   }

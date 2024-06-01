@@ -1,5 +1,10 @@
 <template>
   <div class="not-found">
-    <LinkItem icon="arrow-left-circle-fill" text="Sayfa bulunamadı, anasayfaya dön" to="/" bg="transparent" border="1px solid" padding="10px"/>
+    
+    <Link to="/" bg="transparent" border="1px dashed #1c1c1c" padding="10px">
+      <Icon name="arrow-left-circle-fill" />
+      <Text text="Sayfa bulunamadı, anasayfaya dön" color="#1c1c1c" />
+    </Link>
+    
   </div>
 </template>

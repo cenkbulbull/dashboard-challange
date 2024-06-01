@@ -1,6 +1,5 @@
 <template>
   <div class="sidebar">
-
     <div class="sidebar__header">
       <Avatar
         image="https://avatar.iran.liara.run/public/3"
@@ -24,7 +23,13 @@
         :key="link.id"
       >
         <Link :to="link.to">
-          <Text :text="link.text" color="#1c1c1c" />
+          <Text
+            :text="link.text"
+            color="#1c1c1c"
+            fontSize="14px"
+            fontWeight="400"
+            lineHeight="20px"
+          />
         </Link>
       </div>
     </div>
@@ -38,7 +43,13 @@
       >
         <Link :text="link.text" :to="link.to">
           <Icon :name="link.icon" />
-          <Text :text="link.text" color="#1c1c1c" />
+          <Text
+            :text="link.text"
+            color="#1c1c1c"
+            fontSize="14px"
+            fontWeight="400"
+            lineHeight="20px"
+          />
         </Link>
       </div>
     </div>

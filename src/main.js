@@ -38,12 +38,12 @@ import Text from "@/components/atoms/Text.vue";
 import Input from "@/components/atoms/Input.vue";
 import Button from "@/components/atoms/Button.vue";
 import Avatar from "@/components/atoms/Avatar.vue";
-import Search from "@/components/Search.vue"
-import Breadcrumb from "@/components/Breadcrumb.vue"
+import Search from "@/components/Search.vue";
+import Breadcrumb from "@/components/Breadcrumb.vue";
 import NotificationItem from '@/components/NotificationItem.vue';
-import LinkItem from "@/components/LinkItem.vue";
-import Widget from "@/components/Widget"
-import ChartWidget from "@/components/ChartWidget"
+import Link from "@/components/Link";
+import Widget from "@/components/Widget";
+import ChartWidget from "@/components/ChartWidget";
 
 app.component('Icon',Icon)
 app.component('Text',Text)
@@ -52,8 +52,8 @@ app.component('Button',Button)
 app.component('Search',Search)
 app.component('Breadcrumb',Breadcrumb)
 app.component('NotificationItem',NotificationItem)
+app.component('Link',Link)
 app.component('Avatar',Avatar)
-app.component('LinkItem',LinkItem)
 app.component('Widget',Widget)
 app.component('ChartWidget',ChartWidget)
 

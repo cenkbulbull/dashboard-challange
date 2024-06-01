@@ -3,7 +3,6 @@ import { computed, defineProps } from "vue";
 export function useLinkItemProps(props) {
   const linkItemProps = {
     text: String,
-    icon: String,
     to: String,
     bg: String,
     color: String,

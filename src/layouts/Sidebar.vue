@@ -7,39 +7,44 @@
         width="24px"
         height="24px"
       />
-      <span class="sidebar__header-title"><Text text="Bordo.io" fontSize="14px" fontWeight="400" lineHeight="20px"/></span>
+      <span class="sidebar__header-title"
+        ><Text
+          text="Bordo.io"
+          fontSize="14px"
+          fontWeight="400"
+          lineHeight="20px"
+      /></span>
     </div>
 
-    <div class="sidebar__pages">
-      <span class="sidebar__pages-title"><Text text="Pages" /></span>
-      <LinkItem
+    <div class="sidebar__links">
+      <span class="sidebar__links-title"><Text text="Pages" /></span>
+      <div
+        class="sidebar__links-item"
         v-for="link in links.pages"
         :key="link.id"
-        :to="link.to"
-        :text="link.text"
-        padding="8px"
-        radius="12px"
-        color="#1c1c1c"
-      />
+      >
+        <Link :to="link.to">
+          <Text :text="link.text" color="#1c1c1c" />
+        </Link>
+      </div>
     </div>
 
-    <div class="sidebar__dashboards">
-      <span class="sidebar__dashboards-title"><Text text="Dashboard" /></span>
-      <LinkItem
+    <div class="sidebar__links">
+      <span class="sidebar__links-title"><Text text="Dashboard" /></span>
+      <div
+        class="sidebar__links-item"
         v-for="link in links.dashboards"
         :key="link.id"
-        :text="link.text"
-        :to="link.to"
-        :icon="link.icon"
-        padding="8px"
-        radius="12px"
-        color="#1c1c1c"
-      />
+      >
+        <Link :text="link.text" :to="link.to">
+          <Icon :name="link.icon" />
+          <Text :text="link.text" color="#1c1c1c" />
+        </Link>
+      </div>
     </div>
-    
   </div>
 </template>
 
 <script setup>
-import links from '@/data/links/sidebarlinks.json'
+import links from "@/data/links/sidebarlinks.json";
 </script>

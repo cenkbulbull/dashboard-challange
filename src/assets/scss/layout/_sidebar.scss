@@ -17,11 +17,10 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 8px 12px 8px;
-    border-radius: 12px;
+    padding: 8px;
   }
 
-  &__pages{
+  &__links{
     @include flex(column);
     gap: 4px;
     padding: 0px 0px 12px 0px;
@@ -30,16 +29,19 @@
       color: $eerie-black-40;
       padding: 4px 8px;
     }
-  }
+    
+    &-item{
+      border-radius: 12px;
+      padding: 8px;
 
-  &__dashboards{
-    @include flex(column);
-    gap: 4px;
-    padding: 0px 0px 12px 0px;
+      &:hover {
+        transition: all 0.3s;
+        background-color: $eerie-black-5;
+      }
 
-    &-title{
-      color: $eerie-black-40;
-      padding: 4px 8px;
+      &--active {
+        background-color: $eerie-black-5;
+      }
     }
   }
 }

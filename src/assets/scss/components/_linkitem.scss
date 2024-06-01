@@ -1,0 +1,21 @@
+@use '../base/variables' as *;
+@use '../base/typography' as *;
+@use '../base/mixins' as *;
+
+.link-item {
+  display: flex;
+  text-decoration: none;
+
+  &__icon {
+    margin-right: 8px;
+  }
+
+  &--active {
+    background-color: $eerie-black-5;
+  }
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: $eerie-black-5;
+  }
+}

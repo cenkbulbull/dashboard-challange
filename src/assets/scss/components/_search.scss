@@ -1,0 +1,10 @@
+.search{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__input{
+    display: flex;
+    gap: 4px;
+  }
+}

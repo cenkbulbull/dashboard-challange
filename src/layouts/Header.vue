@@ -16,7 +16,7 @@
     <div class="header__right-side">
 
       <div class="header__right-side-search">
-        <Search padding="4px 8px" radius="8px" bg="rgba(28, 28, 28, 0.05)" placeholder="Search" color="rgba(28, 28, 28, 0.2)" icon="search-line" fontSize="14px"/>
+        <Search padding="4px 8px" radius="8px" bg="rgba(28, 28, 28, 0.05)" placeholder="Search" color="rgba(28, 28, 28, 0.2)" icon="search-line" fontSize="14px" />
       </div>
 
       <div class="header__right-side-button-group">

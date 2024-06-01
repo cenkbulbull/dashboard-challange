@@ -2,14 +2,10 @@ import { computed, defineProps } from "vue";
 
 export function useButtonProps(props) {
   const buttonProps = {
-    text: String,
-    icon: String,
     bg: String,
     color: String,
-    iconColor: String,
     fontSize: String,
     lineHeight: String,
-    iconSize: String,
     padding: String,
     border: String,
     radius: String,

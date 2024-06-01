@@ -1,6 +1,6 @@
 <template>
   <div class="avatar" :style="style">
-    <Icon v-if="props.icon" :name="props.icon" />
+    <slot></slot>
   </div>
 </template>
 

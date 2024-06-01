@@ -2,7 +2,6 @@ import { computed, defineProps } from "vue";
 
 export function useAvatarProps(props) {
   const avatarProps = {
-    icon: String,
     bg: String,
     color: String,
     fontSize: String,

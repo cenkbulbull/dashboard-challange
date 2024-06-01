@@ -1,14 +1,16 @@
 <template>
   <div class="notification" :style="style">
+
     <div class="notification__avatar">
       <Avatar
         :bg="props.avatarBg"
-        :icon="props.icon"
         :image="props.avatarImage"
         :width="props.avatarWidth"
         :height="props.avatarHeight"
         :radius="props.avatarRadius"
-      />
+      >
+        <Icon :name="props.icon" />
+      </Avatar>
     </div>
 
     <div class="notification__info">
@@ -20,6 +22,7 @@
         <Text :text="props.dateText" />
       </div>
     </div>
+    
   </div>
 </template>
 

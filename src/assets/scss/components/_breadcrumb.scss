@@ -1,0 +1,19 @@
+@use '../base/variables' as *;
+@use '../base/typography' as *;
+@use '../base/mixins' as *;
+
+.breadcrumb {
+  margin: 0 !important;
+  &__item {
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "/";
+      position: absolute;
+      right: -5px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $eerie-black-40;
+    }
+  }
+}

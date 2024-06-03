@@ -1,7 +1,7 @@
 <template>
   <div class="header flex justify-space-between items-center padding-y-20 padding-x-28">
 
-    <div class="header__left-side flex gap-8">
+    <div class="header__left-side flex g-8">
       <div class="header__left-side-button-group flex g-8 border-radius-8">
         <Button class="bg-transparent color-eerie-black padding-4" @click="toggleSidebar">
           <Icon name="layout-left-line" />
@@ -11,8 +11,8 @@
         </Button>
       </div>
 
-      <div class="header__left-side-breadcrumb">
-        <!--<Breadcrumb :options="['Dashboard','Default']" color="rgba(28, 28, 28, 0.4)" activeColor="#1C1C1C" radius="8px"/>-->
+      <div class="header__left-side-breadcrumb flex">
+        <Breadcrumb :options="['Dashboard','Default']" />
       </div>
     </div>
 

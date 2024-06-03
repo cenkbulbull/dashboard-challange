@@ -1,5 +1,5 @@
 <template>
-  <button class="button" :style="style">
+  <button class="button flex items-center g-4 padding-0" :style="style">
     <slot></slot> 
   </button>
 </template>

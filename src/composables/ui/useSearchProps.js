@@ -2,9 +2,6 @@ import { computed, defineProps } from "vue";
 
 export function useSearchProps(props) {
   const searchProps = {
-    icon: String,
-    name: String,
-    placeholder: String,
     bg: String,
     color: String,
     fontSize: String,

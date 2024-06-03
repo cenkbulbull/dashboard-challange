@@ -3,37 +3,13 @@
 @use '../base/mixins' as *;
 
 .sidebar{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 16px;
   border-right: 1px solid $eerie-black-10;
   height: 100vh;
-  @include text-style($font-size-lg, $font-weight-light, $line-height-lg);
-  color: $eerie-black;
   overflow-y: scroll;
 
-  &__header{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px;
-  }
-
   &__links{
-    @include flex(column);
-    gap: 4px;
-    padding: 0px 0px 12px 0px;
-
-    &-title{
-      color: $eerie-black-40;
-      padding: 4px 8px;
-    }
-    
     &-item{
-      border-radius: 12px;
-      padding: 8px;
-
+      
       &:hover {
         transition: all 0.3s;
         background-color: $eerie-black-5;

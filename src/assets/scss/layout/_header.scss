@@ -3,31 +3,5 @@
 @use '../base/mixins' as *;
 
 .header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 28px;
   border-bottom: 1px solid $eerie-black-10;
-  
-  &__left-side{
-    display: flex;
-    gap: 8px;
-
-    &-button-group{
-      display: flex;
-      gap: 8px;
-      border-radius: 8px;
-    }
-  }
-
-  &__right-side{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    &-button-group{
-      display: flex;
-      gap: 8px;
-    }
-  }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="avatar" :style="style">
+  <div class="avatar flex items-center justify-center" :style="style">
     <slot></slot>
   </div>
 </template>

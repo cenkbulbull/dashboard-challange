@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+  <div class="home flex flex-column g-28">
+
     <div class="row">
       <div class="col-3"><Widget title="Views" rollingNumber="7,265" iconText="+11,2" icon="arrow-up-double-fill"/></div>
       <div class="col-3"><Widget title="Visits" rollingNumber="3,671" iconText="-0,03" icon="arrow-down-double-fill"/></div>
@@ -20,6 +21,7 @@
     <div class="row">
       <div class="col-12"><ChartWidget title="Marketing & SEO" type="bar" :data="data.barChart" :options="options"/></div>
     </div>
+    
   </div>
 </template>
 

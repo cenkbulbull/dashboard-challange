@@ -3,18 +3,11 @@
 @use '../base/mixins' as *;
 
 .rightbar{
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 16px;
   border-left: 1px solid $eerie-black-10;
   height: 100vh;
   overflow-y: scroll;
 
   &__notification{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
 
     &-item:not(:last-child) .notification__avatar--timeline::after {
       content: "";
@@ -23,12 +16,6 @@
         height: 18px;
         border-radius: 80px;
         background-color: $eerie-black-10;
-    }
-
-    &-title{
-      @include text-style($font-size-lg, $font-weight-light, $line-height-lg);
-      color:$eerie-black;
-      padding: 8px 4px;
     }
   }
 }

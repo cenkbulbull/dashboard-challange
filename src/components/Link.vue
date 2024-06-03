@@ -1,7 +1,7 @@
 <template>
-  <router-link class="link-item" :style="style" :to="props.to">
+  <router-link class="link-item flex" :style="style" :to="props.to">
 
-   <Button>
+   <Button class="bg-transparent">
     <slot></slot>
    </Button>
     

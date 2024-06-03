@@ -1,16 +1,7 @@
 <template>
-  <div class="search" :style="style">
-
-    <div class="search__icon">
-      <Icon :name="props.icon" :color="props.color"/>
-    </div>
-
-    <div class="search__input">
-      <Input border="0" bg="transparent" :placeholder="props.placeholder" :fontSize="props.fontSize"/>
-    </div>
-    
+  <div class="search flex items-center g-8" :style="style">
+    <slot></slot>    
   </div>
-
 </template>
 
 <script setup>

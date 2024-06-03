@@ -1,17 +1,18 @@
 <template>
-  <div class="widget">
-    <div class="widget__title">
+  <div class="widget flex flex-column g-8 padding-24 border-radius-16 bg-coconut-white color-eerie-black">
+
+    <div class="widget__title font-size-12 font-weight-400">
       <Text :text="props.title "/>
     </div>
 
-    <div class="widget__content">
+    <div class="widget__content flex justify-space-between">
 
-      <div class="widget__content-rolling-number">
+      <div class="widget__content-rolling-number font-size-24 font-weight-600">
         <Text :text="props.rollingNumber "/>
       </div>
 
-      <div class="widget__content-icontext">
-        <div class="widget__content-icontext-text">
+      <div class="widget__content-icontext flex items-center g-4">
+        <div class="widget__content-icontext-text font-size-12 font-weight-400">
           <Text :text="props.iconText"/>
         </div>
 
@@ -21,6 +22,7 @@
       </div>
 
     </div>
+    
   </div>
 </template>
 

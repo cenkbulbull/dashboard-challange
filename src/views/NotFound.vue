@@ -1,9 +1,9 @@
 <template>
-  <div class="not-found">
+  <div class="not-found flex items-center justify-center">
     
-    <Link to="/" bg="transparent" border="1px dashed #1c1c1c" padding="10px">
+    <Link class="padding-10" to="/" border="1px dashed #1c1c1c">
       <Icon name="arrow-left-circle-fill" />
-      <Text text="Sayfa bulunamadı, anasayfaya dön" color="#1c1c1c" />
+      <Text class="color-eerie-black" text="Sayfa bulunamadı, anasayfaya dön" />
     </Link>
     
   </div>

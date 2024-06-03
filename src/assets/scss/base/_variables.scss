@@ -1,9 +1,22 @@
-//colors
+// colors
 $coastal-breeze: #e3f5ff;
 $coconut-white: #e5ecf6;
-$catskill-white:#f7f9fb;
+$catskill-white: #f7f9fb;
 $eerie-black: #1c1c1c;
 $eerie-black-40: rgba(28, 28, 28, 0.4);
 $eerie-black-20: rgba(28, 28, 28, 0.2);
 $eerie-black-10: rgba(28, 28, 28, 0.1);
-$eerie-black-5: rgba(28, 28, 28, 0.05)
+$eerie-black-5: rgba(28, 28, 28, 0.05);
+$transparent: transparent;
+
+$colors: (
+  coastal-breeze: $coastal-breeze,
+  coconut-white: $coconut-white,
+  catskill-white: $catskill-white,
+  eerie-black: $eerie-black,
+  eerie-black-40: $eerie-black-40,
+  eerie-black-20: $eerie-black-20,
+  eerie-black-10: $eerie-black-10,
+  eerie-black-5: $eerie-black-5,
+  transparent: $transparent
+);

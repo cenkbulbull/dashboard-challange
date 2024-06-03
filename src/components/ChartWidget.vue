@@ -1,7 +1,8 @@
 <template>
-  <div class="chart-widget" :style="style">
-    <div class="chart-widget__title">
-      <Text :text="props.title" fontSize="14px" fontWeight="600" />
+  <div class="chart-widget flex flex-column g-16 padding-24 border-radius-16 bg-catskill-white color-eerie-black" :style="style">
+
+    <div class="chart-widget__title font-size-14 font-weight-600">
+      <Text :text="props.title" />
     </div>
 
     <div class="chart-widget__content">
@@ -11,6 +12,7 @@
         :options="props.options"
       />
     </div>
+    
   </div>
 </template>
 

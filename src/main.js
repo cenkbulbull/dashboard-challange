@@ -44,6 +44,7 @@ import NotificationItem from '@/components/NotificationItem.vue';
 import Link from "@/components/Link";
 import Widget from "@/components/Widget";
 import ChartWidget from "@/components/ChartWidget";
+import Selectbox from "./components/atoms/Selectbox.vue";
 
 app.component('Icon',Icon)
 app.component('Text',Text)
@@ -56,6 +57,7 @@ app.component('Link',Link)
 app.component('Avatar',Avatar)
 app.component('Widget',Widget)
 app.component('ChartWidget',ChartWidget)
+app.component('Selectbox',Selectbox)
 
 //layouts
 import Dashboard from "@/layouts/Dashboard.vue"

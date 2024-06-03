@@ -2,6 +2,16 @@
   <div class="home flex flex-column g-28">
 
     <div class="row">
+      <div class="col-12 flex justify-space-between color-eerie-black">
+
+        <Text class="padding-8 font-size-14 font-weight-600" text="Overview"/>
+
+        <Selectbox class="font-size-12 font-weight-400 padding-y-4 padding-x-8" border="0" name="dashboard" :options="['Today','Monday']" />
+
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-3"><Widget title="Views" rollingNumber="7,265" iconText="+11,2" icon="arrow-up-double-fill"/></div>
       <div class="col-3"><Widget title="Visits" rollingNumber="3,671" iconText="-0,03" icon="arrow-down-double-fill"/></div>
       <div class="col-3"><Widget title="New Users" rollingNumber="156" iconText="+15,1" icon="arrow-up-double-fill"/></div>

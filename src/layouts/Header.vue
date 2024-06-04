@@ -1,5 +1,5 @@
 <template>
-  <div class="header flex justify-space-between items-center padding-y-20 padding-x-28">
+  <div class="header flex justify-space-between items-center padding-y-20">
 
     <div class="header__left-side flex g-8">
 

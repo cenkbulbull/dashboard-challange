@@ -21,6 +21,13 @@
   }
 }
 
+// Letter spacing classes
+@for $i from 0 through 50 {
+  .letter-spacing-#{$i} {
+    letter-spacing: $i * 0.1 + px;
+  }
+}
+
 // Border radius classes
 @for $i from 0 through 100 {
   .border-radius-#{$i} {

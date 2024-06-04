@@ -8,7 +8,7 @@
     <div class="widget__content flex justify-space-between">
 
       <div class="widget__content-rolling-number font-size-24 font-weight-600">
-        <Text :text="props.rollingNumber "/>
+        <Text class="letter-spacing-20" :text="props.rollingNumber "/>
       </div>
 
       <div class="widget__content-icontext flex items-center g-4">

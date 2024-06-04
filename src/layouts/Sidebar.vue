@@ -20,6 +20,7 @@
 
       <div
         class="sidebar__links-item padding-8 border-radius-12"
+        :class="$route.path == link.to ? 'sidebar__links-item--active':''"
         v-for="link in links.pages"
         :key="link.id"
       >

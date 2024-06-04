@@ -1,5 +1,5 @@
 <template>
-  <div class="text" :style="style">
+  <div class="text">
     {{ props.text }}
   </div>
 </template>
@@ -8,5 +8,4 @@
 import { useTextProps,defineProps } from "@/composables/ui/useTextProps";
 
 const props = defineProps(useTextProps().textProps);
-const { style } = useTextProps(props);
 </script>

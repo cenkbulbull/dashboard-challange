@@ -1,20 +1,9 @@
-import { computed,defineProps } from "vue";
+import { defineProps } from "vue";
 
-export function useTextProps(props) {
+export function useTextProps() {
   const textProps = {
     text: String,
-    color: String,
-    fontSize: String,
-    fontWeight: String,
-    lineHeight: String
   };
 
-  const style = computed(() => ({
-    color: props.color,
-    fontSize: props.fontSize,
-    fontWeight:props.fontWeight,
-    lineHeight:props.lineHeight
-  }));
-
-  return { textProps, style,defineProps };
+  return { textProps,defineProps };
 }
